@@ -294,7 +294,7 @@ a {
 }
 a:hover,
 a:focus {
-    color: #03e1e4;
+    color: #FFABD3;
     text-decoration: none;
 }
 a:focus {
@@ -1709,10 +1709,10 @@ output {
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-    border-color: #03e1e4;
+    border-color: #FFABD3;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #03e1e4;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #03e1e4;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #FFABD3;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #FFABD3;
 }
 .form-control::-moz-placeholder {
     color: #999;
@@ -2085,8 +2085,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
     color: #fff;
-    background-color: #03e1e4;
-    border-color: #03e1e4;
+    background-color: #FFABD3;
+    border-color: #FFABD3;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2094,8 +2094,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #03D3D6;
-    border-color: #03D3D6;
+    background-color: #F995C5;
+    border-color: #F995C5;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3581,7 +3581,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     color: white;
-    background-color: #03e1e4;
+    background-color: #FFABD3;
 }
 .nav-stacked > li {
     float: none;
