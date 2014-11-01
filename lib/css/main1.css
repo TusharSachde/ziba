@@ -1,10 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700);
-@font-face {
-    font-family: 'CheddarJack';
-    src: url('CheddarJack.woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 body {
     height: 0px !important;
 }
@@ -15,11 +9,8 @@ body {
     border: 1px solid red;
 }
 .font {
-    font-family: "CheddarJack";
-    font-size: x-large;
 }
 .articleheader {
-    font-family: "CheddarJack";
     text-align: center;
     color: #1c1b17;
 }
@@ -27,7 +18,7 @@ body {
     color: #1c1b17;
     width: 960px;
     margin: 0 auto;
-    background: #d6f3ef;
+    background: #FFDEEE;
     padding: 15px 30px;
 }
 .myaccount1 {
@@ -46,7 +37,7 @@ body {
     height: 135px;
 }
 .newbadge {
-    background-color: rgb(39, 240, 232);
+    background-color: #FFABD3;
     position: absolute;
     margin-left: 18px;
     /* margin-top: 52px; */
@@ -207,13 +198,13 @@ input:focus {
     text-align: center;
     padding-top: 10px;
     margin-top: -9px;
-    color: #96f3f3;
+    color: #FFABD3;
     font-weight: bold;
     font-size: 150%;
 }
 .protitle h5:hover,
 .proprice h5:hover {
-    color: #96f3f3;
+    color: #FF90C6;
 }
 .protitle a,
 .proprice a {
@@ -235,7 +226,7 @@ input:focus {
 .productheader h4 {
     font-weight: 300;
     font-size: 30px;
-    color: rgb(39, 240, 232);
+    color: #F995C5;
 }
 .quantitybox {
     width: 40px;
@@ -270,7 +261,7 @@ input:focus {
     margin-top: 25px;
 }
 .cart tr>th {
-    background-color: rgb(39, 240, 232);
+    background-color: #FFABD3;
     color: white;
 }
 .billing h3 {
@@ -460,6 +451,7 @@ button.home-btn:focus {
 .prowish {
     font-size: 18px;
     margin-left: 10px;
+    color: #F995C5 !important;
 }
 .lookdetails {
     position: absolute;
@@ -479,7 +471,7 @@ h5.pricecolor {
     color: #FFABD3;
 }
 .zibafunc {
-    background: rgba(152, 226, 106, 0.51);
+    background: rgba(255, 171, 211, 0.5);
     padding: 10px 15px;
     position: fixed;
     z-index: 99;
@@ -489,7 +481,7 @@ h5.pricecolor {
     color: white;
     font-size: 12px;
     text-align: center;
-    display: none;
+    cursor: pointer;
 }
 /*Horizontal Slider*/
 
@@ -642,10 +634,10 @@ img.butterfly-top {
     width: 100%;
 }
 .nav.mainmenu {
-    width: 485px;
+    width: 710px;
 }
 .nav.mainmenu.homeclass {
-    width: 485px;
+    width: 710px;
     visibility: visible;
 }
 li.homeclass {
@@ -675,7 +667,7 @@ li.homeclass {
 }
 .contactussubform {
     padding: 10px;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 .contactussubform p {
     font-size: 16px;
@@ -694,7 +686,7 @@ li.homeclass {
     padding: 10px;
 }
 .megamenu {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 .fotternav .active {
     font-weight: bold;
@@ -709,7 +701,6 @@ div.megamenu.megamenu2 {
 }
 .socialbig {
     text-align: center;
-    font-family: "CheddarJack";
     font-size: 40px;
     background: #efc7cf;
     padding: 67px 0;
@@ -749,7 +740,7 @@ div.megamenu.megamenu2 {
     font-size: 18px;
     padding: 15px;
     font-weight: 100;
-    color: #03D3D6;
+    color: #FFABD3;
     z-index: 100000;
     border: 3px solid #E4E4E4;
 }

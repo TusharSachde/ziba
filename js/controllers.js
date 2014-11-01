@@ -627,15 +627,15 @@ phonecatControllers.controller('profile',
 
     });
 
-phonecatControllers.controller('lylaloves',
+phonecatControllers.controller('ziba',
     function ($scope, TemplateService, MainJson, $rootScope, $location) {
         //$scope.firstloadclass = TemplateService.firstload;
         $scope.template = TemplateService;
         TemplateService.header = "views/header.html";
         TemplateService.navigation = "views/navigation.html";
-        TemplateService.changetitle("lylaloves...");
+        TemplateService.changetitle("iheartziba...");
         $scope.homeactive = "active";
-        TemplateService.content = "views/lylaloves.html";
+        TemplateService.content = "views/ziba.html";
         TemplateService.slider = "";
         $scope.loginlogouttext = "Login";
         //authenticate
@@ -923,7 +923,7 @@ phonecatControllers.controller('checkout',
 
 
             handler.open({
-                name: 'Lyla Loves',
+                name: 'Ziba Collection',
                 description: 'Total Amount: £ ' + amount,
                 amount: amount * 100,
 

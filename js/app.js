@@ -63,9 +63,9 @@ firstapp.config(['$routeProvider',
             templateUrl: 'views/template.html',
             controller: 'profile'
         }).
-        when('/lylaloves', {
+        when('/ziba', {
             templateUrl: 'views/template.html',
-            controller: 'lylaloves'
+            controller: 'ziba'
         }).
         when('/newin', {
             templateUrl: 'views/template.html',
