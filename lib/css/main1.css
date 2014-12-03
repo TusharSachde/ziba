@@ -1,6 +1,21 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-book.woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-light.woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-bold.woff');
+    font-weight: 500;
+}
 body {
-    height: 0px !important;
+    font-family: 'Futura', cursive;
+    color: #4d4d4d;
 }
 .errormsg {
     color: red;
@@ -8,9 +23,7 @@ body {
 .ng-invalid.ng-dirty {
     border: 1px solid red;
 }
-.font {
-}
-.articleheader {
+.font {} .articleheader {
     text-align: center;
     color: #1c1b17;
 }
@@ -32,9 +45,6 @@ body {
     font-size: 16px;
     position: absolute;
     margin: 66px 0 0 498px;
-}
-.logo img {
-    height: 135px;
 }
 .newbadge {
     background-color: #FFABD3;
@@ -63,10 +73,11 @@ body {
     margin-top: 20px;
 }
 .logo img {
-    height: 150px;
-    margin-left: 40px;
+    height: auto;
+    width: 100%;
+    margin-left: 10px;
     margin-bottom: -15px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .headerright {
     margin-top: 20px;
@@ -95,14 +106,14 @@ input:focus {
     border: 0px;
 }
 .newsletter {
-    background: #E0F0FF;
+    background: #c1bcc0;
     padding: 22px 0 15px;
     margin-bottom: 5px;
     bottom: 0px;
     width: 100%;
 }
 .newsletter.fixed {
-    position:fixed;
+    position: fixed;
 }
 .newsletter .form-control {
     border: none;
@@ -155,8 +166,7 @@ input:focus {
     border-bottom: 2px solid #e4e4e4;
     font-size: 16px;
     position: absolute;
-    /* margin: 65px 0 0 180px; */
-    margin: 10px;
+    margin: -4px 0;
     border: 0px;
 }
 .content {
@@ -388,7 +398,6 @@ button.home-btn {
 button.home-btn:hover {
     background: #F6F6F6;
     color: #FFABD3;
-    -webkit-transition: all 700ms;
     transition: all 700ms;
     -o-transition: all 700ms;
     -moz-transition: all 700ms;
@@ -565,11 +574,21 @@ h5.pricecolor {
     height: 46px;
     width: 100%;
 }
+.bot-bar {
+    background: #c1bcc0;
+}
 .top-bar {
     position: fixed;
-    background: #E0F0FF;
+    background: #c1bcc0;
     z-index: 199;
     min-width: 1080px;
+}
+.top-bar a+a {
+    margin-left: 5px;
+}
+.bot-bar .row,
+.top-bar .row {
+    padding: 13px 40px;
 }
 .top-bar .socialicons {
     padding: 5px;
@@ -810,6 +829,55 @@ span.cartspace {
 .discountcoupon {
     border-color: #FFABD3;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #FFABD3;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #FFABD3;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #FFABD3;
 }
+.home-nav {
+    padding-top: 46px;
+    background: url(../../img/bg-menu.jpg) no-repeat #f5f5f5;
+    background-size: 100%;
+    height: 615px;
+}
+.menu ul {
+    list-style: none;
+    padding: 0px 0 0 65px;
+}
+.no-pad .col-xs-6 {
+    padding: 0;
+}
+.no-pad {
+    margin: 0;
+}
+.menu li {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin: 15px 0;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.menu input {
+    height: 25px;
+    padding: 0px 5px;
+    width: 180px;
+    background: transparent;
+    border: 1px solid #4d4d4d;
+    font-size: 13px;
+}
+.footer-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-nav li {
+    display: inline;
+    text-transform: uppercase;
+}
+.footer-nav li+li {
+    margin-left: 10px;
+    border-left: 1px solid #4d4d4d;
+    padding-left: 10px;
+}
+.bold {font-weight: 500;}
+.thin {font-weight: 100;}
+.spacer {letter-spacing: 2px;}

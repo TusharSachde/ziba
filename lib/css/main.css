@@ -1,29 +1,50 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-.logo img {
-    height: 135px;
+@font-face {
+    font-family: 'Futura';
+    src: url(futura-light.woff);
+    font-weight: normal;
 }
-.newbadge{
+@font-face {
+    font-family: 'Futura';
+    src: url(futura-book.woff);
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url(futura-bold.woff);
+    font-weight: 500;
+}
+body {
+    font-family: 'Futura', cursive;
+    color: #4d4d4d;
+}
+.newbadge {
     background-color: rgb(39, 240, 232);
-position: absolute;
-margin-left: -3px;
-margin-top: -10px;
-z-index: -1;
+    position: absolute;
+    margin-left: -3px;
+    margin-top: -10px;
+    z-index: -1;
 }
-.msg{
+.bold {
+    font-weight: 500;
+}
+.thin {
+    font-weight: 100;
+}
+.msg {
     color: green;
     font-size: large;
 }
-.newsletterhead{
+.newsletterhead {
     margin-top: 18px;
     float: left;
 }
-.myaccount{
-position: absolute;
-margin-top: 20px;
-z-index: 1;
-background-color: white;
-margin-left: 40px;
-padding: 20px;
+.myaccount {
+    position: absolute;
+    margin-top: 20px;
+    z-index: 1;
+    background-color: white;
+    margin-left: 40px;
+    padding: 20px;
 }
 .headerright {
     margin-top: 20px;
@@ -325,7 +346,6 @@ button.home-btn {
 button.home-btn:hover {
     background: #F6F6F6;
     color: #FFABD3;
-    -webkit-transition: all 700ms;
     transition: all 700ms;
     -o-transition: all 700ms;
     -moz-transition: all 700ms;
@@ -414,6 +434,7 @@ h5.pricecolor {
     text-align: center;
 }
 /*Horizontal Slider*/
+
 .hori-item {
     width: 250px;
     border-top: 20px solid #ccc;
@@ -427,7 +448,7 @@ h5.pricecolor {
     opacity: 1;
 }
 .hori-item.active {
-    border-color:#AAA;
+    border-color: #AAA;
     -webkit-transition: all 700ms;
     background: white;
     opacity: 1;
@@ -447,12 +468,13 @@ h5.pricecolor {
     -webkit-transition: all 400ms;
 }
 .horizon:hover {
-    bottom:0px;
+    bottom: 0px;
 }
 .horizon.firstshow {
-    bottom:0px;
+    bottom: 0px;
 }
-.product .img1,.product .img2 {
-width: 300px;
-height: 300px;
+.product .img1,
+.product .img2 {
+    width: 300px;
+    height: 300px;
 }

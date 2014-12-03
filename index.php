@@ -17,29 +17,28 @@
     </script>
     <script>
         var isMobile = {
-            Android: function () {
+            Android: function() {
                 return navigator.userAgent.match(/Android/i);
             },
-            BlackBerry: function () {
+            BlackBerry: function() {
                 return navigator.userAgent.match(/BlackBerry/i);
             },
-            iOS: function () {
+            iOS: function() {
                 return navigator.userAgent.match(/iPhone|iPad|iPod/i);
             },
-            Opera: function () {
+            Opera: function() {
                 return navigator.userAgent.match(/Opera Mini/i);
             },
-            Windows: function () {
+            Windows: function() {
                 return navigator.userAgent.match(/IEMobile/i);
             },
-            any: function () {
+            any: function() {
                 return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
             }
         };
-        
-        if(isMobile.any())
-        {
-            window.location="http://mobile.lylaloves.co.uk"+window.location.hash;
+
+        if (isMobile.any()) {
+            window.location = "http://mobile.lylaloves.co.uk" + window.location.hash;
         }
     </script>
     <script type="text/javascript">
@@ -47,7 +46,7 @@
         _clt["custId"] = "{{email}}";
         _clt["siteId"] = "40606bc583";
         _clt["ref"] = encodeURIComponent(document.referrer);
-        (function () {
+        (function() {
             var cl = document.createElement('script');
             cl.type = 'text/javascript';
             cl.async = true;
@@ -94,9 +93,9 @@
     <script src="https://checkout.stripe.com/checkout.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
-        (function (i, s, o, g, r, a, m) {
+        (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
+            i[r] = i[r] || function() {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
@@ -119,52 +118,42 @@
         <div class="row">
             <div class="col-xs-3">
 
+<span class="bold">WELCOME TO ZIBA</span>
+
+
+            </div>
+            <div class="col-xs-6 padder" ng-controller="newsletter">
+                <!--
+                <p style="text-align:center;">Sign up for our newsletter and get free delivery on your first order! &nbsp;&nbsp;&nbsp;
+                    <input type="email" class="form-control newsletteremail" ng-model="uemail" placeholder="" required> <a style="color:black;" class="btn btn-primary" ng-click="newsletter(uemail)">GO</a>
+                </p>
+-->
+            </div>
+
+            <div class="col-xs-3">
 
                 <div class="input-group headsearch" ng-controller="search">
                     <span class="input-group-addon icon"><span class="glyphicon glyphicon-search"></span></span>
                     <input type="text" class="form-control inputbox" ng-model="searchpro" placeholder="Search" ng-change="search(searchpro)">
                 </div>
-            </div>
-            <div class="col-xs-7 padder" ng-controller="newsletter">
-                <p style="text-align:center;">Sign up for our newsletter and get free delivery on your first order! &nbsp;&nbsp;&nbsp;
-                    <input type="email" class="form-control newsletteremail" ng-model="uemail" placeholder="" required> <a style="color:black;" class="btn btn-primary" ng-click="newsletter(uemail)">GO</a>
-                </p>
-            </div>
 
-            <div class="col-xs-2">
-
-                <div class="pull-right" style="margin-right:15px;" ng-controller="badge">
-
-                    <a href="#/Login" class="fadeInRight wow topicon" ng-class="firstloadclass wow">
-                        <img src="img/account.png">
-                    </a>
-
+                <div class="pull-right" ng-controller="badge">
                     <a href="#" class="badge newbadge" ng-show="template.totalproducts!=0">{{template.totalproducts}}</a>
                     <a href="#/cart" class="topicon {{template.cartclicked}}">
-                        <img src="img/cart.png">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
+                    
+                    <a href="#/Login" class="fadeInRight wow topicon" ng-class="firstloadclass wow">
+                        <span class="thin">MY ACCOUNT</span>
                     </a>
 
+                    <!--
                     <a href="#/wishlist" class="fadeInRight wow topicon" ng-class="firstloadclass wow">
                         <img src="img/wishlist.png">
                     </a>
+-->
 
 
-
-                    <!--a href="https://twitter.com/ZibaCollection" target="_blank" class="fadeInRight wow" myfirstloadclass data-wow-delay="0.3s">
-                    <img src="img/twitter.png" class="socialicons tadaanimation">
-                </a>
-                <a href="http://pinterest.com/zibacollection/" target="_blank" class="fadeInRight wow" myfirstloadclass data-wow-delay="0.4s">
-                    <img src="img/pinterest.png" class="socialicons tadaanimation">
-                </a>
-                <a href="http://instagram.com/zibacollection" target="_blank" class="wow fadeInRight" data-wow-delay="0.5s">
-                    <img src="img/insta.png" class="socialicons tadaanimation">
-                </a>
-                <a href="https://www.facebook.com/pages/Ziba-Collection/284068054986182" target="_blank" class="wow fadeInRight" data-wow-delay="0.6s">
-                    <img src="img/facebook.png" class="socialicons tadaanimation">
-                </a>
-                <a href="http://zibaacc.tumblr.com/" target="_blank" class="fadeInRight wow" myfirstloadclass data-wow-delay="0.7s">
-                    <img src="img/tumbler.png" class="socialicons tadaanimation">
-                </a-->
                 </div>
 
 
@@ -181,10 +170,10 @@
     <script>
         var issearch = false;
 
-        $(document).ready(function () {
+        $(document).ready(function() {
 
 
-            $(".headsearch .icon").click(function () {
+            $(".headsearch .icon").click(function() {
 
                 if (issearch) {
                     issearch = false;
@@ -200,7 +189,7 @@
     </script>
 
     <script type="text/javascript">
-        (function (d, t) {
+        (function(d, t) {
             if (window.location.hash != '#gleam' && ('' + document.cookie).match(/(^|;)\s*GleamaaA2s=X($|;)/)) {
                 return;
             }
