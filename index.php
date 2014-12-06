@@ -192,8 +192,8 @@
    
     <div class="barheight"></div>
     <div class="container-fluid-non-responsive">
-        <!--        <div ng-view skrollr-tag></div>-->
-        <div ng-view></div>
+                <div ng-view skrollr-tag></div>
+<!--        <div ng-view></div>-->
     </div>
 
     <script>
