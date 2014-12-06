@@ -1,44 +1,48 @@
 <div class="content">
     <div class="contenttop">
-        <div class="row">
-            <div class="col-xs-4">
-                <span class="breadcrumb">
-							Home / Cart</a>
-							</span>
-                </span>
+             <div class="row">
+                <div class="col-xs-4">
+                    <span class="breadcrumb">
+                                        Home / Cart</a>
+                                        </span>
+                    </span>
+                </div>
+            
             </div>
 
-        </div>
-
-        <div class="container cart">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Product Name</th>
-                        <th>Unit Price</th>
-                        <th>Qty</th>
-                        <th>Subtotal</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="singlecart in cart">
-                        <td>{{singlecart.name}}</td>
-
-                        <td>{{singlecart.price|convertprice}}</td>
-                        <td>
-                            <span class="cartspace" ng-hide="newquantity[$index]!=1"></span>
-                            <a class="btn btn-default carticon" ng-click="subproductcart(singlecart.id,singlecart.name,singlecart.price,newquantity[$index],$index)" ng-show="newquantity[$index]!=1">-</a>
-                            <input type="text" ng-model="newquantity[$index]" class="form-control cartinput" readonly><a class="btn btn-default carticon" ng-click="addproductcart(singlecart.id,singlecart.name,singlecart.price,newquantity[$index],$index)">+</a> &nbsp; &nbsp;<a class="hidden btn btn-primary" ng-click="addtocart(singlecart.id,singlecart.name,singlecart.price,newquantity[$index],$index)"><strong><span class="glyphicon glyphicon-floppy-save"></span></strong></a> 
-                        </td>
-                        <td>{{singlecart.subtotal|convertprice}}</td>
-                        <td><a ng-click="deletecart(singlecart.id)"><strong>X</strong></a>
-                        </td>
-
-                    </tr>
-
-                </tbody>
-            </table>
+        <div class=" cart">
+            <div class="row">
+                <div class="col-xs-12">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Unit Price</th>
+                                <th>Qty</th>
+                                <th>Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="singlecart in cart">
+                                <td>{{singlecart.name}}</td>
+                    
+                                <td>{{singlecart.price|convertprice}}</td>
+                                <td>
+                                    <span class="cartspace" ng-hide="newquantity[$index]!=1"></span>
+                                    <a class="btn btn-default carticon" ng-click="subproductcart(singlecart.id,singlecart.name,singlecart.price,newquantity[$index],$index)" ng-show="newquantity[$index]!=1">-</a>
+                                    <input type="text" ng-model="newquantity[$index]" class="form-control cartinput" readonly><a class="btn btn-default carticon" ng-click="addproductcart(singlecart.id,singlecart.name,singlecart.price,newquantity[$index],$index)">+</a> &nbsp; &nbsp;<a class="hidden btn btn-primary" ng-click="addtocart(singlecart.id,singlecart.name,singlecart.price,newquantity[$index],$index)"><strong><span class="glyphicon glyphicon-floppy-save"></span></strong></a> 
+                                </td>
+                                <td>{{singlecart.subtotal|convertprice}}</td>
+                                <td><a ng-click="deletecart(singlecart.id)"><strong>X</strong></a>
+                                </td>
+                    
+                            </tr>
+                    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
 
             <h3>Discount Codes</h3>

@@ -125,7 +125,7 @@ phonecatControllers.controller('home',
             if (!uemail) {
                 alert("Please Enter Email");
             } else {
-                console.log($scope.alldate);
+                console.log('Submitted: ' + uemail);
                 MainJson.newsletter("", uemail, "").success(newslettersaved);
             }
         };

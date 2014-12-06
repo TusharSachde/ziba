@@ -1,107 +1,19 @@
-<div class="header" skrollr class="row marginer" data-0="opacity:1;margin-top:0px;margin-bottom:0px;" data-500="opacity:0;margin-top:500px;margin-bottom:-500px;">
-
-
-
-    <div class="row">
-        <div class="col-xs-3">
-            <div myfirstloadclass class="logo fadeInRight">
-                <a href="#/home" class="" id="totop">
-                    <img src="img/logo.jpg" />
-                </a>
+<nav>
+    <div class="home-nav">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="logo">
+                    <img src="img/logo-home.jpg" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <span ng-include src="template.navigation"></span>
+                        <li>Newsletter</li>
+                        <form ng-submit="newsletter(uemail);"><input type="text" placeholder="email address" ng-model="uemail" required> </form>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="col-xs-6">
-
-            <center>
-                <a href="http://instagram.com/lyla_loves" target="_blank">
-                    <img src="img/insta.png" class="socialicons">
-                </a>
-                <a href="https://twitter.com/lyla_loves" target="_blank">
-                    <img src="img/twitter.png" class="socialicons">
-                </a>
-                <a href="https://www.facebook.com/lylaloves" target="_blank">
-                    <img src="img/facebook.png" class="socialicons">
-                </a>
-                <a href="http://www.pinterest.com/lloves1548/" target="_blank">
-                    <img src="img/pinterest.png" class="socialicons">
-                </a>
-                <a href="https://www.tumblr.com/blog/lylalovesblog" target="_blank">
-                    <img src="img/tumbler.png" class="socialicons">
-                </a>
-            </center>
-        </div>
-
-
-        <div class="zibafunc">
-            i
-            <br>h
-            <br>e
-            <br>a
-            <br>r
-            <br>t
-            <br>z
-            <br>i
-            <br>b
-            <br>a
-            <br>
-            <br>c
-            <br>l
-            <br>u
-            <br>b
-        </div>
-
-
-        <!--
-				<a href="https://www.tumblr.com/blog/lylalovesblog" target="_blank">
-                    <img src="img/googleplus.png" class="socialicons">
-                </a>
--->
-
-        <div class="col-xs-3">
-        </div>
     </div>
-</div>
-    <!--
-<div class="header">
-<div class="row">
-<div class="col-xs-3">
-<div myfirstloadclass class="logo fadeInRight">
-<a href="#/home" class="pulseanimation">
-<img src="img/logo.jpg" />
-</a>
-</div>
-</div>
-<div class="col-xs-5 newsletterhead">
-<input type="email" class="form-control newsletteremail" ng-model="uemail" placeholder="Email"> <a class="btn btn-primary" ng-click="newsletter(uemail)">Subscribe</a>
-</div>
-<div class="col-xs-4">
-<div myfirstloadclass class="headerright fadeInRight">
-<div class="row">
-<div class="col-xs-6">
-<!--a href="#/login" class="pulseanimation"><span class="glyphicon glyphicon-user"></span>&nbsp; {{heademail}}</a-> 
-<a href="#/Login" class="pulseanimation" ng-mouseover="showaccount()"><span class="glyphicon glyphicon-user"></span>&nbsp; My Account{{demo}}</a> 
-&nbsp;&nbsp;&nbsp;<a href="#/cart" class="pulseanimation"><span class="glyphicon  glyphicon-shopping-cart"></span>&nbsp; Cart</a>
-<div class="badge newbadge">
-{{badge}}
-</div>
-</div>
-<!--############################33-->
 
-    <!--############################33->
-<div class="myaccount" ng-show="visible" ng-mouseleave="hideaccount()">
-<p>My Account</p>
-<p>Wishlist</p>
-<p><a href="#/checkout">Checkout</a></p>
-<p><a href="#/{{loginlogouttext}}">{{loginlogouttext}}</a></p>
-</div>
-<div class="col-xs-6">
-<input type="text" class="form-control headsearch" placeholder="Search">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
--->
+</nav>
