@@ -75,6 +75,7 @@ body {
 }
 .fixer {
     position: fixed;
+    z-index: 9;
 }
 .fixer .logo img {
     width: 320px;
@@ -216,13 +217,13 @@ input:focus {
     text-align: center;
     padding-top: 10px;
     margin-top: -9px;
-    color: #FFABD3;
-    font-weight: bold;
-    font-size: 150%;
+    color: #838383;
+    font-weight: normal;
+    font-size: 1.3em;
 }
 .protitle h5:hover,
 .proprice h5:hover {
-    color: #FF90C6;
+    color: #696267;
 }
 .protitle a,
 .proprice a {
@@ -243,8 +244,8 @@ input:focus {
 }
 .productheader h4 {
     font-weight: 300;
-    font-size: 30px;
-    color: #F995C5;
+    font-size: 26px;
+    color: #4d4d4d;
 }
 .quantitybox {
     width: 40px;
@@ -264,7 +265,7 @@ input:focus {
     border: 0px !important;
 }
 .table-hover tr:hover>td {
-    color: #FFABD3;
+    color: #4D4D4D;
 }
 .checkout {
     margin-top: 30px;
@@ -279,7 +280,7 @@ input:focus {
     margin-top: 25px;
 }
 .cart tr>th {
-    background-color: #FFABD3;
+    background-color: #C1BCC0;
     color: white;
 }
 .billing h3 {
@@ -364,9 +365,10 @@ ul.submenudown li {
     width: 12px;
     height: 12px;
     margin: 0;
-    background-color: #FFABD3;
+    background-color: #c1bcc0;
     margin-left: 9px;
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     border-radius: 0px;
 }
@@ -377,17 +379,19 @@ ul.submenudown li {
     background-color: rgba(255, 255, 255, 0.6);
     margin-left: 9px;
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     border-radius: 0px;
 }
 .productdetails {
     position: fixed;
     right: 10px;
-    background: rgba(253, 253, 253, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 2px;
-    padding: 0 10px;
+    padding: 10px;
     z-index: 1;
-    width: 400px;
+    width: 350px;
+    box-shadow: 0px 0px 7px #C1BCC0;
 }
 .lookbookimg {
     padding: 10px;
@@ -405,7 +409,8 @@ button.home-btn {
 }
 button.home-btn:hover {
     background: #F6F6F6;
-    color: #FFABD3;
+    color: #c1bcc0;
+    -webkit-transition: all 700ms;
     transition: all 700ms;
     -o-transition: all 700ms;
     -moz-transition: all 700ms;
@@ -424,7 +429,7 @@ button.home-btn:focus {
     z-index: 11;
     background-repeat: no-repeat;
     position: absolute;
-    right: -6px;
+    right: 0px;
 }
 .discountprice {
     text-decoration: line-through;
@@ -439,7 +444,7 @@ button.home-btn:focus {
     right: 0em;
 }
 .wishlist:hover {
-    color: #FFABD3;
+    color: #c1bcc0;
 }
 .sortby {
     min-width: 165px;
@@ -468,7 +473,7 @@ button.home-btn:focus {
 .prowish {
     font-size: 18px;
     margin-left: 10px;
-    color: #F995C5 !important;
+    color: #C1BCC0 !important;
 }
 .lookdetails {
     position: absolute;
@@ -485,7 +490,7 @@ button.home-btn:focus {
     -webkit-transition: all 700ms;
 }
 h5.pricecolor {
-    color: #FFABD3;
+    color: #c1bcc0;
 }
 .zibafunc {
     background: rgba(255, 171, 211, 0.5);
@@ -542,9 +547,9 @@ h5.pricecolor {
 }
 .product .img1,
 .product .img2 {
-    width: 300px;
+    width: 100%;
     overflow: hidden;
-    height: 300px;
+    height: 320px;
 }
 .megamenu img {
     width: 75%;
@@ -774,9 +779,8 @@ div.megamenu.megamenu2 {
     font-size: 18px;
     padding: 15px;
     font-weight: 100;
-    color: #FFABD3;
+    color: #C1BCC0;
     z-index: 100000;
-    border: 3px solid #E4E4E4;
 }
 .gototop:focus {
     outline: 0px;
@@ -842,14 +846,14 @@ span.cartspace {
     background: green;
 }
 .discountcoupon {
-    border-color: #FFABD3;
+    border-color: #C1BCC0;
     outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #FFABD3;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #C1BCC0;
 }
 .home-nav {
     background: url(../../img/bg-menu.jpg) no-repeat #f5f5f5;
     background-size: 100%;
-    height: 615px;
+    height: 610px;
 }
 .menu ul {
     list-style: none;
@@ -873,7 +877,7 @@ span.cartspace {
 .menu input {
     height: 25px;
     padding: 0px 5px;
-    width: 90%;
+    width: 260px;
     background: transparent;
     border: 1px solid #4d4d4d;
     font-size: 13px;
@@ -900,4 +904,7 @@ span.cartspace {
 }
 .spacer {
     letter-spacing: 2px;
+}
+.product-content .col-xs-4 {
+    padding: 0 3px;
 }
