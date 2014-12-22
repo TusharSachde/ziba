@@ -1,17 +1,35 @@
 @font-face {
     font-family: 'Futura';
-    src: url(futura-light.woff);
+    src: url(futura_medium.ttf);
     font-weight: normal;
 }
 @font-face {
     font-family: 'Futura';
-    src: url(futura-book.woff);
+    src: url(futura_book.ttf);
     font-weight: 100;
 }
 @font-face {
     font-family: 'Futura';
-    src: url(futura-bold.woff);
-    font-weight: 500;
+    src: url(futura_bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Amantic';
+    src: url(Amatic-Bold.ttf);
+}
+@font-face {
+    font-family: 'FP Second Hand';
+    src: url(FP_second_hand.ttf);
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(Lato-Lig.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(Lato-reg.ttf);
+    font-weight: 100;
 }
 body {
     font-family: 'Futura', cursive;
@@ -477,4 +495,11 @@ h5.pricecolor {
 .product .img2 {
     width: 300px;
     height: 300px;
+}
+.protitle {
+    font-family: Amantic;
+}
+.proprice {
+    font-family: 'Lato';
+    font-weight: 100;
 }
