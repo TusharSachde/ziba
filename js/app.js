@@ -63,7 +63,7 @@ firstapp.config(['$routeProvider',
             templateUrl: 'views/template.html',
             controller: 'profile'
         }).
-        when('/ziba', {
+        when('/iheartziba', {
             templateUrl: 'views/template.html',
             controller: 'ziba'
         }).

@@ -635,7 +635,7 @@ phonecatControllers.controller('ziba',
         TemplateService.navigation = "views/navigation.html";
         TemplateService.changetitle("iheartziba...");
         $scope.homeactive = "active";
-        TemplateService.content = "views/ziba.html";
+        TemplateService.content = "views/iheartziba.html";
         TemplateService.slider = "";
         $scope.loginlogouttext = "Login";
         //authenticate

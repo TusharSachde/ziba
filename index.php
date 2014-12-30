@@ -119,18 +119,21 @@
             <div class="row">
                 <div class="col-xs-3"><span class="bold spacer">WELCOME TO ZIBA</span>
                 </div>
-                <div class="col-xs-6 text-center"><span class="bold spacer">{{msgg}}</span></div>
+                <div class="col-xs-6 text-center"><span class="bold spacer">{{msgg}}</span>
+                </div>
                 <div class="col-xs-3">
                     <div class="pull-right">
-                        <div class="input-group headsearch" ng-controller="search">
-                    <span class="input-group-addon icon"><span class="glyphicon glyphicon-search"></span></span>
-                    <input type="text" class="form-control inputbox" ng-model="searchpro" placeholder="Search" ng-change="search(searchpro)">
-                </div>
+                       <a href="#/Login"><span class="thin">MY ACCOUNT</span></a>
+                        
                         <a href="#" class="badge newbadge" ng-show="template.totalproducts">{{template.totalproducts}}</a>
                         <a href="#/cart" class="topicon {{template.cartclicked}}">
                             <span class="glyphicon glyphicon-shopping-cart"></span>
                         </a>
-                        <a href="#/Login"><span class="thin">MY ACCOUNT</span></a>
+                        <div class="input-group headsearch" ng-controller="search">
+                            <span class="input-group-addon icon"><span class="glyphicon glyphicon-search"></span></span>
+                            <input type="text" class="form-control inputbox" ng-model="searchpro" placeholder="Search" ng-change="search(searchpro)">
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -138,7 +141,7 @@
     </header>
 
 
-<!--
+    <!--
     <div class="top-bar barheight">
 
         <div class="row">
@@ -188,12 +191,12 @@
         </div>
     </div>
 -->
-   
-   
+
+
     <div class="barheight"></div>
     <div class="container-fluid-non-responsive">
-                <div ng-view skrollr-tag></div>
-<!--        <div ng-view></div>-->
+        <div ng-view skrollr-tag></div>
+        <!--        <div ng-view></div>-->
     </div>
 
     <script>
