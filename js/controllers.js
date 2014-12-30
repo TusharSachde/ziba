@@ -1451,7 +1451,7 @@ phonecatControllers.controller('product',
     function ($scope, $routeParams, TemplateService, MainJson, $timeout, $location) {
         //$scope.firstloadclass = TemplateService.firstload;
         $scope.template = TemplateService;
-        TemplateService.header = "views/header.html";
+        TemplateService.header = "views/headerproduct.html";
         TemplateService.navigation = "views/navigation.html";
         console.log($routeParams.ProductId);
         $scope.template = TemplateService;

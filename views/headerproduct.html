@@ -1,0 +1,31 @@
+<div class="header">
+    <div class="">
+        <div class="row">
+            <div style="position:fixed;z-index: 999;">
+                <div class="fixer">
+                    <div class="logo">
+                        <a href="#/home" class="" ng-class="ishome" id="totop">
+                            <img src="img/logo.jpg" />
+                        </a>
+                    </div>
+                    <div class="menu">
+                       <i class="glyphicon glyphicon-align-justify hover-nav"></i>
+                        <ul class="show-nav">
+                            <span ng-include src="template.navigation"></span>
+                            <li>Newsletter</li>
+                            <form ng-submit="newsletter(uemail);">
+                                <input type="text" placeholder="email address" ng-model="uemail" required>
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-xs-12 min-high">
+                <div ng-include src="template.content"></div>
+            </div>
+        </div>
+    </div>
+</div>

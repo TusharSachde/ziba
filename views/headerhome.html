@@ -1,25 +1,3 @@
-<!--
-<nav>
-    <div class="home-nav">
-        <div class="row">
-            <div class="col-xs-3">
-                <div class="logo">
-                    <div style="height:240px"></div>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <span ng-include src="template.navigation"></span>
-                        <li>Newsletter</li>
-                        <form ng-submit="newsletter(uemail);"><input type="text" placeholder="email address" ng-model="uemail" required> </form>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</nav>
--->
-
 <nav>
     <div class="row">
         <div class="col-xs-12">
@@ -31,10 +9,12 @@
                 <div class="menu">
                     <ul>
                         <span ng-include src="template.navigation"></span>
+                        
                         <li>Newsletter</li>
                         <form ng-submit="newsletter(uemail);">
                             <input type="text" placeholder="email address" ng-model="uemail" required>
                         </form>
+                        
                     </ul>
                 </div>
             </div>

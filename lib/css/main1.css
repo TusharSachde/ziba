@@ -273,16 +273,16 @@ input:focus {
     padding: 2px 12px;
 }
 .productheader {
-    border-bottom: 1px solid #DADADA;
-    margin-bottom: 10px;
+    /* border-bottom: 1px solid #DADADA; */
+    /* margin-bottom: 15px; */
+    color: #838383;
 }
 .productdesc {
-    border-bottom: 1px solid #DADADA;
-    margin-bottom: 10px;
+    /* border-bottom: 1px solid #DADADA; */
+    margin-bottom: 15px;
+    color: #4d4d4d;
 }
 .zoomLens {
-    -webkit-box-shadow: rgb(206, 206, 206) 1px 0px 5px 2px;
-    -moz-box-shadow: rgb(206, 206, 206) 1px 0px 5px 2px;
     box-shadow: rgb(206, 206, 206) 1px 0px 5px 2px;
     border: 0px !important;
 }
@@ -310,8 +310,6 @@ input:focus {
     color: #a8a8a8;
 }
 .billing .panel-group .panel {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
     border-radius: 0px;
     border-color: transparent;
 }
@@ -392,11 +390,7 @@ ul.submenudown li {
     margin-left: 9px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
     border-radius: 0px;
 }
 .carousel-indicators li {
@@ -407,26 +401,19 @@ ul.submenudown li {
     margin-left: 9px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
     border-radius: 0px;
 }
 .productdetails {
-    position: fixed;
-    right: 10px;
-    background: rgba(255, 255, 255, 0.9);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
+    position: absolute;
+    right: 35px;
+    /* background: rgba(255, 255, 255, 0.9); */
     border-radius: 2px;
     padding: 10px;
     z-index: 1;
-    width: 350px;
-    -webkit-box-shadow: 0px 0px 7px #C1BCC0;
-    -moz-box-shadow: 0px 0px 7px #C1BCC0;
-    box-shadow: 0px 0px 7px #C1BCC0;
+    width: 380px;
+    /* box-shadow: 0px 0px 7px #C1BCC0; */
+    text-align: center;
 }
 .lookbookimg {
     padding: 10px;
@@ -610,9 +597,6 @@ h5.pricecolor {
 }
 .bgimg {
     background: url('../../img/banner.jpg');
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
     background-size: 100%;
     height: 578px;
     background-repeat: no-repeat;
@@ -835,8 +819,6 @@ div.megamenu.megamenu2 {
 }
 .carticon {
     font-size: 25px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
     border-radius: 100%;
     width: 25px;
     height: 25px;
@@ -885,15 +867,10 @@ span.cartspace {
 .discountcoupon {
     border-color: #C1BCC0;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #C1BCC0;
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #C1BCC0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #C1BCC0;
 }
 .home-nav {
     background: url(../../img/bg-menu.jpg) no-repeat #f5f5f5;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
     background-size: 100%;
     height: 610px;
 }
@@ -919,7 +896,7 @@ span.cartspace {
 .menu input {
     height: 25px;
     padding: 0px 5px;
-    width: 260px;
+    width: 225px;
     background: transparent;
     border: 1px solid #4d4d4d;
     font-size: 13px;
@@ -968,8 +945,59 @@ span.cartspace {
     bottom: 0px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+.hover-nav {
+    padding-left: 65px;
+}
+ul.show-nav {
+    opacity: 0;
+    -webkit-transition: 300ms all ease;
+    transition: 300ms all ease;
+}
+.menu:hover .show-nav {
+    opacity: 1;
+}
+h5.big,
+.big {
+    font-size: 34px;
+}
+.btn-black {
+    background: #111;
+    margin-top: 20px;
+    border-color: #111;
+    text-transform: uppercase;
+    padding: 4px 70px;
+    letter-spacing: 1px;
+}
+p.soft {
+    font-weight: 300;
+    color: #838383;
+}
+.select-hold {
+    margin-bottom: 15px;
+    border-top: 1px solid #838383;
+    border-bottom: 1px solid #838383;
+    padding: 10px 0;
+}
+.select-hold select {
+    width: 32%;
+    border: 0px;
+    background: transparent;
+    color: #838383;
+    font-family: 'Futura', cursive;
+    font-weight: 300;
+}
+.grey {
+    background: grey;
+}
+.gold {
+    background: gold;
+}
+.colorer {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
