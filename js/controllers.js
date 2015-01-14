@@ -904,7 +904,7 @@ phonecatControllers.controller('checkout',
         };
         var paymentcomplete = function (data, status) {
             console.log(data);
-            window.location.href = "http://www.lylaloves.co.uk/#/thankyou";
+            window.location.href = "http://zibawebsite.appspot.com/#/thankyou";
         };
         var handler = StripeCheckout.configure({
             key: 'pk_live_I1udSOaNJK4si3FCMwvHsY4g',
