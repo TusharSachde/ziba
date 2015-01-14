@@ -631,8 +631,8 @@ phonecatControllers.controller('ziba',
     function ($scope, TemplateService, MainJson, $rootScope, $location) {
         //$scope.firstloadclass = TemplateService.firstload;
         $scope.template = TemplateService;
-        TemplateService.header = "views/header.html";
-        TemplateService.navigation = "views/navigation.html";
+        TemplateService.header = "views/headerihz.html";
+        TemplateService.navigation = "views/navigationhome.html";
         TemplateService.changetitle("iheartziba...");
         $scope.homeactive = "active";
         TemplateService.content = "views/iheartziba.html";

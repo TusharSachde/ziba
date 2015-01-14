@@ -8,6 +8,10 @@
         "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/assets/data-tables/DT_bootstrap.js",
         "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/assets/js/chart.js",
         "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/js1/modules/funnel.js",
-        "/Applications/XAMPP/xamppfiles/htdocs/ziba/js/app.js"
+        "/Applications/XAMPP/xamppfiles/htdocs/ziba/js/app.js",
+        "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/assets/js/promise.js",
+        "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/js1/modules/map.js",
+        "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/js1/modules/map.src.js",
+        "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/js1/modules/no-data-to-display.js"
     ]
 }
