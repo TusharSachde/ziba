@@ -75,7 +75,7 @@ $db['testing']['autoinit'] = TRUE;
 $db['testing']['stricton'] = FALSE;
 
 // Production (App Engine Cloud SQL) DB Settings
-$db['production']['hostname'] = 'localhost';
+$db['production']['hostname'] = null;
 $db['production']['username'] = 'root';
 $db['production']['password'] = 'chintan123';
 $db['production']['database'] = 'website';
