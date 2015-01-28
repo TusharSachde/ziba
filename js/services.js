@@ -1,5 +1,5 @@
-var adminurl = 'http://zibawebsite.appspot.com/admin/index.php/json/';
-var adminurl2 = 'http://zibawebsite.appspot.com/admin/index.php/json/';
+var adminurl = 'http://zibalatest.appspot.com/admin/index.php/json/';
+var adminurl2 = 'http://zibalatest.appspot.com/admin/index.php/json/';
 
 var conversionrate = [{
     id: "1",
