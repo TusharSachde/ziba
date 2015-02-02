@@ -97,7 +97,7 @@ body {
     z-index: 9;
 }
 .fixer .logo img {
-    width: 320px;
+    width: 65%;
 }
 .logo img {
     height: auto;
@@ -1034,4 +1034,33 @@ p.soft {
 .fixer .logo img.small-logo {
     width: 200px;
     padding-bottom: 20px;
+}
+ul.drop-down {
+    padding: 0 0 0 20px;
+}
+ul.menu-bar ul {
+    display: none;
+}
+ul.menu-bar li:hover >ul {
+    display: block;
+    transition: ease 0.3s;
+}
+.menu ul li>ul {
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.menu ul li:hover ul {
+    height: auto;
+    opacity: 1;
+}
+ul.drop-down li a {
+    font-size: 14px;
+}
+ul.drop-down li {
+    margin: 5px;
+}
+ul.drop-down li:last-child {
+margin-bottom: -3px;
 }
