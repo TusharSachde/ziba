@@ -842,40 +842,22 @@ phonecatControllers.controller('lookbook',
         //authenticate
         $scope.changeactivelookbook = function (id) {
             $scope.firstshow = "";
-            console.log(id);
+//            console.log(id);
             for (var i = 0; i < $scope.lookbookimages.length; i++) {
                 $scope.lookbookimages[i].active = "";
             }
             $scope.lookbookimages[id].active = "active";
             $scope.activeimage = $scope.lookbookimages[id].image;
+            $scope.activelookbook = $scope.lookbookimages[id];
         };
-        $scope.lookbookimages = [{
-            id: 1,
-            image: "img/lookbook/pro1.jpg"
-                                   }, {
-            id: 2,
-            image: "img/lookbook/pro2.jpg"
-                                   }, {
-            id: 3,
-            image: "img/lookbook/pro1.jpg"
-                                   }, {
-            id: 4,
-            image: "img/lookbook/pro2.jpg"
-                                   }, {
-            id: 5,
-            image: "img/lookbook/pro1.jpg"
-                                   }, {
-            id: 6,
-            image: "img/lookbook/pro2.jpg"
-                                   }, {
-            id: 7,
-            image: "img/lookbook/pro1.jpg"
-                                   }, {
-            id: 8,
-            image: "img/lookbook/pro2.jpg"
-                                   }];
-        $scope.lookbookimages[0].active = "active";
-        $scope.activeimage = $scope.lookbookimages[0].image;
+        
+
+        var categorysuccess = function (data, status) {
+            $scope.lookbookimages = data.product;
+            $scope.changeactivelookbook(0);
+        };
+        MainJson.getproductbycategory(9).success(categorysuccess);
+
     });
 
 
@@ -887,10 +869,14 @@ phonecatControllers.controller('checkout',
         TemplateService.navigation = "views/navigation.html";
         TemplateService.changetitle("Checkout");
         TemplateService.content = "views/checkout.html";
-    
+
         TemplateService.slider = "";
-        $scope.buttonsvalidate={billing:0,shipping:0,payment:0};    
-    $scope.loginlogouttext = "Login";
+        $scope.buttonsvalidate = {
+            billing: 0,
+            shipping: 0,
+            payment: 0
+        };
+        $scope.loginlogouttext = "Login";
         $scope.isloggedin = 0;
         $scope.form = {};
         $scope.form.shipdifferent = 1;
@@ -976,7 +962,7 @@ phonecatControllers.controller('checkout',
 
         $scope.continuebilling = function () {
             $scope.billinginfo = 1;
-            $scope.buttonsvalidate.billing=1;
+            $scope.buttonsvalidate.billing = 1;
         };
 
         $scope.continueshipping = function () {
@@ -1020,7 +1006,7 @@ phonecatControllers.controller('checkout',
             console.log(check);
             if (check) {
                 $scope.shippinginfo = 1;
-                $scope.buttonsvalidate.shipping=1;
+                $scope.buttonsvalidate.shipping = 1;
                 //$scope.hidebilling = 0;
             }
 
@@ -1076,8 +1062,8 @@ phonecatControllers.controller('checkout',
             console.log(check);
             if (check) {
                 $scope.shippinginfo = 1;
-                
-                $scope.buttonsvalidate.shipping=1;
+
+                $scope.buttonsvalidate.shipping = 1;
                 //$scope.hidebilling = 0;
             }
 
@@ -1242,7 +1228,7 @@ phonecatControllers.controller('checkout',
         };
         $scope.continuepayment = function (form) {
             $scope.paywithcard = 1;
-            $scope.buttonsvalidate.payment=1;
+            $scope.buttonsvalidate.payment = 1;
             $scope.form.finalamount = $scope.subtotal;
             console.log($scope.cart);
             //MainJson.orderitem($scope.cart);
@@ -1525,13 +1511,13 @@ phonecatControllers.controller('product',
             MainJson.addtocart(id, name, price, quantity).success(cartt);
             $scope.addedtocart = "show";
         };
-        var addedtowaitinglist=function(data) {
+        var addedtowaitinglist = function (data) {
             console.log(data);
-            $scope.addedtowaitinglist=true;
+            $scope.addedtowaitinglist = true;
         };
-        $scope.addedtowaitinglist=false;
-        $scope.addtowaitinglist=function(product,email) {
-            MainJson.addtowaitinglist(product,email).success(addedtowaitinglist);
+        $scope.addedtowaitinglist = false;
+        $scope.addtowaitinglist = function (product, email) {
+            MainJson.addtowaitinglist(product, email).success(addedtowaitinglist);
         };
 
         $scope.$on("$includeContentLoaded", function () {
