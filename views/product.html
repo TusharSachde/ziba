@@ -32,10 +32,12 @@
                     </div>
                     <p class="soft">Length: 25cm</p>
                     <div class="select-hold">
+                        <!--
                         <select name="fabric" id="">
                             <option value="fabric">Fabric</option>
                             <option value="fabric">Fabric1</option>
                         </select>
+-->
                         <select name="delivery" id="">
                             <option value="delivery">Delivery</option>
                             <option value="delivery">Delivery1</option>
@@ -47,42 +49,48 @@
                         </select>
 
                     </div>
-                   <span class="text-left"> <div class="color-hold">
-                            <p class="soft">Color: <span class="grey colorer"></span> <span class="gold colorer"></span></p>
-                        </div>
-                        <div class="size-hold">
-                           <p class="soft">
-                                 Size: <input type="text" style="width: 65px;">
-                            </p>
-                        </div></span>
-                    <span ng-show="product.quantity>0">
+<!--
+                     <div class="color-hold">
+                            <p class="soft">Color: <span class="grey colorer"></span>  <span class="gold colorer"></span>
+                    </p>
+                </div>
+-->
+<!--
+                <div class="size-hold">
+                    <p class="soft">
+                        Size:
+                        <input type="text" style="width: 65px;">
+                    </p>
+                </div>
+-->
+                <span ng-show="product.quantity>0">
                         <label class="hidden">Qty :</label>
                         <input type="text" value="1" class="hidden quantitybox" ng-model="addquantity">
                         <a class="btn btn-primary btn-black" ng-click="addtocart(product.id,product.name,rate,addquantity)">Add to Cart</a>
                     </span>
-                    <span ng-show="product.quantity<=0">
+                <span ng-show="product.quantity<=0">
                         
                         <span ng-hide="addedtowaitinglist"><input type="email" value="1" class="form-control waitingemail" placeholder="Email" style="width:190px;" ng-model="product.waitingemail">
                             <a class="btn btn-primary " ng-click="addtowaitinglist(product.id,product.waitingemail)">Add to Waiting List</a></span>
-                    <span ng-show="addedtowaitinglist">You have been added to waiting list</span>
-                    </span>
+                <span ng-show="addedtowaitinglist">You have been added to waiting list</span>
+                </span>
 
 
 
 
-                    <!--                    <a href="" ng-click="addwishlist(id)"><span ng-show="{{wish}}" class="glyphicon glyphicon-heart prowish"></span><span style="color:rgb(39, 240, 232);" ng-hide="{{wish}}" class="glyphicon glyphicon-heart prowish"></span></a>-->
+                <!--                    <a href="" ng-click="addwishlist(id)"><span ng-show="{{wish}}" class="glyphicon glyphicon-heart prowish"></span><span style="color:rgb(39, 240, 232);" ng-hide="{{wish}}" class="glyphicon glyphicon-heart prowish"></span></a>-->
 
-                    <div ng-show="wishlistlogin" class="alert alert-warning" style="margin:20px 0;">Please Login for Wishlist</div>
-                    <div ng-show="wishlistadded" class="alert alert-success" style="margin:20px 0;">Added to Wishlist</div>
-                    <span ng-show="product.quantity>0"><div ng-show="addedtocart=='show'" class="alert alert-success" style="margin:20px 0;">Added to Cart</div></span>
-                </div>
-
-
+                <div ng-show="wishlistlogin" class="alert alert-warning" style="margin:20px 0;">Please Login for Wishlist</div>
+                <div ng-show="wishlistadded" class="alert alert-success" style="margin:20px 0;">Added to Wishlist</div>
+                <span ng-show="product.quantity>0"><div ng-show="addedtocart=='show'" class="alert alert-success" style="margin:20px 0;">Added to Cart</div></span>
             </div>
-        </div>
-        <!--        <span class="pronew2" ng-show="product.isnew=='1'"><img src="img/new.png"></span>-->
 
-        <span>
+
+        </div>
+    </div>
+    <!--        <span class="pronew2" ng-show="product.isnew=='1'"><img src="img/new.png"></span>-->
+
+    <span>
                
                 
             <div class="row" ng-show="productimage[0].image">
@@ -137,7 +145,7 @@
                </span>
 
 
-    </div>
+</div>
 </div>
 <div style="margin-bottom:800px"></div>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
