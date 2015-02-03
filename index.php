@@ -123,8 +123,8 @@
                 </div>
                 <div class="col-xs-3">
                     <div class="pull-right">
-                       <a href="#/Login"><span class="thin">MY ACCOUNT</span></a>
-                        
+                        <a href="#/Login"><span class="thin">MY ACCOUNT</span></a>
+
                         <a href="#" class="badge newbadge" ng-show="template.totalproducts">{{template.totalproducts}}</a>
                         <a href="#/cart" class="topicon {{template.cartclicked}}">
                             <span class="glyphicon glyphicon-shopping-cart"></span>
@@ -133,64 +133,13 @@
                             <span class="input-group-addon icon"><span class="glyphicon glyphicon-search"></span></span>
                             <input type="text" class="form-control inputbox" ng-model="searchpro" placeholder="Search" ng-change="search(searchpro)">
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-
-    <!--
-    <div class="top-bar barheight">
-
-        <div class="row">
-            <div class="col-xs-3">
-
-                <span class="bold">WELCOME TO ZIBA</span>
-
-
-            </div>
-            <div class="col-xs-6 padder" ng-controller="newsletter">
-                
-                <p style="text-align:center;">Sign up for our newsletter and get free delivery on your first order! &nbsp;&nbsp;&nbsp;
-                    <input type="email" class="form-control newsletteremail" ng-model="uemail" placeholder="" required> <a style="color:black;" class="btn btn-primary" ng-click="newsletter(uemail)">GO</a>
-                </p>
-
-            </div>
-
-            <div class="col-xs-3">
-
-                <div class="input-group headsearch" ng-controller="search">
-                    <span class="input-group-addon icon"><span class="glyphicon glyphicon-search"></span></span>
-                    <input type="text" class="form-control inputbox" ng-model="searchpro" placeholder="Search" ng-change="search(searchpro)">
-                </div>
-
-                <div class="pull-right" ng-controller="badge">
-                    <a href="#" class="badge newbadge" ng-show="template.totalproducts!=0">{{template.totalproducts}}</a>
-                    <a href="#/cart" class="topicon {{template.cartclicked}}">
-                        <span class="glyphicon glyphicon-shopping-cart"></span>
-                    </a>
-
-                    <a href="#/Login" class="fadeInRight wow topicon" ng-class="firstloadclass wow">
-                        <span class="thin">MY ACCOUNT</span>
-                    </a>
-
-                    
-                    <a href="#/wishlist" class="fadeInRight wow topicon" ng-class="firstloadclass wow">
-                        <img src="img/wishlist.png">
-                    </a>
-
-
-
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
--->
 
 
     <div class="barheight"></div>

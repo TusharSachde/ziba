@@ -21,11 +21,15 @@
     </div>
     <div class="maincontent">
 
-        <div class="lookdetails">
+        <div class="lookdetails text-center">
             
-            <h3>{{activelookbook.name}}</h3>
-            <h4>{{activelookbook.price|convertprice}}</h4>
-            <a class="btn btn-primary" ng-click="addtocart(activelookbook.id,activelookbook.name,activelookbook.price,1)"><span class="glyphicon  glyphicon-shopping-cart"></span> Add to Cart</a>
+            <h5 class="protitle big">{{activelookbook.name}}</h5>
+            
+            <div class="proprice">
+                        <h5>{{activelookbook.price|convertprice}}</h5>
+                        <hr style="width:100%;">
+                    </div>
+            <a class="btn btn-primary btn-black no-margin" ng-click="addtocart(activelookbook.id,activelookbook.name,activelookbook.price,1)">Add to Cart</a>
             <br>
             <div class="pad"></div>
 <!--
