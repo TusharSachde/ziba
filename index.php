@@ -3,14 +3,14 @@
 
 <head ng-controller="headerctrl">
     <title ng-bind="'Ziba - '+template.title">Ziba</title>
-    <meta name="name" content="Lyla Loves">
-    <meta name="description" content="Bring your Outfit to Life with Fashion Jewelry by lyla loves! Shop Statement Necklaces, Cuff Bracelets, and Midi Rings! Find the Best Fashion Jewelry at lylaloves.co.uk.">
+    <meta name="name" content="Ziba">
+    <meta name="description" content="Bring your Outfit to Life with Fashion Jewelry by lyla loves! Shop Statement Necklaces, Cuff Bracelets, and Midi Rings! Find the Best Fashion Jewelry at Ziba.">
     <meta name="keywords" content="Jewelry, Fashion Jewelry, Statement Necklaces, Earrings, Rings, Cuff Bracelets.">
     <script>
         var hostname = window.location.hostname;
-        if (hostname == "lylaloves.co.uk") {
+        if (hostname == "zibacollection.co.uk") {
             console.log(hostname);
-            window.location.replace("http://www.lylaloves.co.uk/");
+           // window.location.replace("http://www.zibacollection.co.uk/");
         } else {
             console.log("other " + hostname);
         }
@@ -38,7 +38,7 @@
         };
 
         if (isMobile.any()) {
-            window.location = "http://mobile.lylaloves.co.uk" + window.location.hash;
+           // window.location = "http://mobile.lylaloves.co.uk" + window.location.hash;
         }
     </script>
     <script type="text/javascript">
