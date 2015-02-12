@@ -94,7 +94,7 @@ body {
 }
 .fixer {
     position: fixed;
-    z-index: 9;
+    z-index: -1;
 }
 .fixer .logo img {
     width: 65%;
@@ -1081,12 +1081,18 @@ ul.menu-bar ul {
 }
 ul.menu-bar li:hover >ul {
     display: block;
+    -webkit-transition: ease 0.3s;
+    -moz-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
     transition: ease 0.3s;
 }
 .menu ul li>ul {
     height: 0px;
     overflow: hidden;
     opacity: 0;
+    -webkit-transition: opacity 300ms ease;
+    -moz-transition: opacity 300ms ease;
+    -o-transition: opacity 300ms ease;
     transition: opacity 300ms ease;
 }
 .menu ul li:hover ul {
