@@ -61,7 +61,7 @@
     <link href="lib/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="lib/css/animate.css" rel="stylesheet" type="text/css">
     <link href="lib/css/image-zoom.min.css" rel="stylesheet">
-    <link href="lib/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://cdn.jsdelivr.net/fontawesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="lib/css/main1.css" rel="stylesheet">
     <link href="lib/range/angular.rangeSlider.css" rel="stylesheet">
     <link href="https://checkout.stripe.com/v3/checkout/button.css" rel="stylesheet">
