@@ -117,7 +117,7 @@
     <header>
         <div class="top-bar barheight">
             <div class="row">
-                <div class="col-xs-3"><span class="bold spacer">Join the IHEARTZIBA Club</span>
+                <div class="col-xs-3"><span class="bold spacer"><a href="#/iheartziba">Join the IHEARTZIBA Club</a></span>
                 </div>
                 <div class="col-xs-6 text-center"><span class="bold spacer">{{msgg}}</span>
                 </div>

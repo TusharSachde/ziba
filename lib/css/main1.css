@@ -984,7 +984,7 @@ span.cartspace {
     font-weight: 100;
 }
 .spacer {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .product-content .col-xs-4 {
     padding: 0 3px;
@@ -1113,4 +1113,16 @@ margin-bottom: -3px;
 }
 .no-margin {
     margin: 0 !important
+}
+.facebook:hover {
+    color: #4870A6;
+}
+.twitter:hover {
+   color: #00BBEF;
+}
+.pinterest:hover {
+   color: #CB2027;
+}
+.instagram:hover {
+   color: #517FA4;
 }
