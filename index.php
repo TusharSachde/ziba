@@ -10,7 +10,7 @@
         var hostname = window.location.hostname;
         if (hostname == "zibacollection.co.uk") {
             console.log(hostname);
-           // window.location.replace("http://www.zibacollection.co.uk/");
+            window.location.replace("http://www.zibacollection.co.uk/");
         } else {
             console.log("other " + hostname);
         }
@@ -38,7 +38,7 @@
         };
 
         if (isMobile.any()) {
-           // window.location = "http://mobile.lylaloves.co.uk" + window.location.hash;
+            window.location = "http://mobile.zibacollection.co.uk" + window.location.hash;
         }
     </script>
     <script type="text/javascript">
