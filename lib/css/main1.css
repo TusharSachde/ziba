@@ -158,17 +158,11 @@ input:focus {
 .iosicon {
     -webkit-filter: grayscale(1);
     opacity: 0.7;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
     transition: all 1s;
 }
 .androidicon {
     -webkit-filter: grayscale(1);
     opacity: 0.4;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
     transition: all 1s;
 }
 .iosicon:hover,
@@ -179,9 +173,6 @@ input:focus {
 .socialicons {
     width: 60px;
     margin-top: 22px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 .socialicons:hover {
@@ -219,9 +210,6 @@ input:focus {
     top: 0px;
     z-index: 10;
     opacity: 1;
-    -webkit-transition: all 1.3s;
-    -moz-transition: all 1.3s;
-    -o-transition: all 1.3s;
     transition: all 1.3s;
 }
 .product .img2:hover {
@@ -296,8 +284,6 @@ input:focus {
     color: #4d4d4d;
 }
 .zoomLens {
-    -webkit-box-shadow: rgb(206, 206, 206) 1px 0px 5px 2px;
-    -moz-box-shadow: rgb(206, 206, 206) 1px 0px 5px 2px;
     box-shadow: rgb(206, 206, 206) 1px 0px 5px 2px;
     border: 0px !important;
 }
@@ -325,8 +311,6 @@ input:focus {
     color: #a8a8a8;
 }
 .billing .panel-group .panel {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
     border-radius: 0px;
     border-color: transparent;
 }
@@ -405,13 +389,7 @@ ul.submenudown li {
     margin: 0;
     background-color: #c1bcc0;
     margin-left: 9px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
     border-radius: 0px;
 }
 .carousel-indicators li {
@@ -420,21 +398,13 @@ ul.submenudown li {
     margin: 0;
     background-color: rgba(255, 255, 255, 0.6);
     margin-left: 9px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
     border-radius: 0px;
 }
 .productdetails {
     position: absolute;
     right: 35px;
     /* background: rgba(255, 255, 255, 0.9); */
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
     border-radius: 2px;
     padding: 10px;
     z-index: 1;
@@ -459,11 +429,7 @@ button.home-btn {
 button.home-btn:hover {
     background: #F6F6F6;
     color: #c1bcc0;
-    -webkit-transition: all 700ms;
-    -moz-transition: all 700ms;
-    -o-transition: all 700ms;
     transition: all 700ms;
-    -webkit-transition: all 700ms;
     transition: all 700ms;
     -o-transition: all 700ms;
     -moz-transition: all 700ms;
@@ -532,16 +498,10 @@ button.home-btn:focus {
     min-height: 150px;
     padding: 10px 20px;
     opacity: 0;
-    -webkit-transition: all 700ms;
-    -moz-transition: all 700ms;
-    -o-transition: all 700ms;
     transition: all 700ms;
 }
 .maincontent:hover .lookdetails {
     opacity: 1;
-    -webkit-transition: all 700ms;
-    -moz-transition: all 700ms;
-    -o-transition: all 700ms;
     transition: all 700ms;
 }
 h5.pricecolor {
@@ -566,9 +526,6 @@ h5.pricecolor {
     width: 250px;
     border-top: 20px solid #ccc;
     float: left;
-    -webkit-transition: all 700ms;
-    -moz-transition: all 700ms;
-    -o-transition: all 700ms;
     transition: all 700ms;
     opacity: .5;
 }
@@ -579,9 +536,6 @@ h5.pricecolor {
 }
 .hori-item.active {
     border-color: #AAA;
-    -webkit-transition: all 700ms;
-    -moz-transition: all 700ms;
-    -o-transition: all 700ms;
     transition: all 700ms;
     background: white;
     opacity: 1;
@@ -598,9 +552,6 @@ h5.pricecolor {
     bottom: -250px;
     z-index: 10000;
     background: white;
-    -webkit-transition: all 400ms;
-    -moz-transition: all 400ms;
-    -o-transition: all 400ms;
     transition: all 400ms;
 }
 .horizon:hover {
@@ -642,9 +593,6 @@ h5.pricecolor {
 }
 .bgimg {
     background: url('../../img/banner.jpg');
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
     background-size: 100%;
     height: 578px;
     background-repeat: no-repeat;
@@ -754,9 +702,6 @@ li.homeclass {
     width: 0px;
     opacity: 0;
     padding: 0px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 .headsearch .inputbox.showit {
@@ -766,9 +711,6 @@ li.homeclass {
 }
 .headsearch .icon {
     background: transparent;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 .headsearch .icon.showit {
@@ -874,8 +816,6 @@ div.megamenu.megamenu2 {
 }
 .carticon {
     font-size: 25px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
     border-radius: 100%;
     width: 25px;
     height: 25px;
@@ -924,15 +864,10 @@ span.cartspace {
 .discountcoupon {
     border-color: #C1BCC0;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #C1BCC0;
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #C1BCC0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #C1BCC0;
 }
 .home-nav {
     background: url(../../img/bg-menu.jpg) no-repeat #f5f5f5;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
     background-size: 100%;
     height: 610px;
 }
@@ -1006,10 +941,6 @@ span.cartspace {
     position: absolute;
     bottom: 0px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 .hover-nav {
@@ -1017,11 +948,7 @@ span.cartspace {
 }
 ul.show-nav {
     opacity: 0;
-    -webkit-transition: 300ms all ease;
     transition: 300ms all ease;
-    -moz-transition: 300ms all ease;
-    -o-transition: 300ms all ease;
-    -webkit-transition: 300ms all ease;
     transition: 300ms all ease;
 }
 .menu:hover .show-nav {
@@ -1081,18 +1008,12 @@ ul.menu-bar ul {
 }
 ul.menu-bar li:hover >ul {
     display: block;
-    -webkit-transition: ease 0.3s;
-    -moz-transition: ease 0.3s;
-    -o-transition: ease 0.3s;
     transition: ease 0.3s;
 }
 .menu ul li>ul {
     height: 0px;
     overflow: hidden;
     opacity: 0;
-    -webkit-transition: opacity 300ms ease;
-    -moz-transition: opacity 300ms ease;
-    -o-transition: opacity 300ms ease;
     transition: opacity 300ms ease;
 }
 .menu ul li:hover ul {
@@ -1125,4 +1046,7 @@ margin-bottom: -3px;
 }
 .instagram:hover {
    color: #517FA4;
+}
+.product .img {
+  height: 320px;
 }
