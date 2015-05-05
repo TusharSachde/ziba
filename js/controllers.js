@@ -1448,7 +1448,34 @@ phonecatControllers.controller('product',
         $scope.addedtocart = "hide";
         $scope.loginlogouttext = "Login";
 
+//zoom coding
+     $scope.items = [{
+            "src": "http://t3.gstatic.com/images?q=tbn:ANd9GcR1Kp2JmcnxhBOf66aN_JqMWl3h_okOQKFX_kEqwr9mRe5iPomy",
+            "alt": "image 001"
+        }, {
+            "src": "http://t3.gstatic.com/images?q=tbn:ANd9GcQAoT9UmjmunwFTAA19_n1auOFR_JG017_TUru-E91T7nIH8HyU",
+            "alt": "image 002"
+        }, {
+            "src": "http://t2.gstatic.com/images?q=tbn:ANd9GcTfntbVv3pl5wFCe6IdkaMVrme_Au9TD8Z_xE95Ezv6jz8oK4nT",
+            "alt": "image 003"
+        }, {
+            "src": "http://t1.gstatic.com/images?q=tbn:ANd9GcSAOralDJGSVtfirbHG5VdFqG8fTqXMh7C4Xd_aHCy176SKNQqK",
+            "alt": "image 004"
+        }, {
+            "src": "http//fc08.deviantart.net/fs70/f/2012/122/0/c/landscape_wallpaper_by_nickchoubg-d4yaep3.png",
+            "alt": "image 005"
+        }, ];
 
+       $scope.ZoomItems = [];
+
+
+        $scope.SelectedItem = $scope.ZoomItems[0];
+
+        $scope.ThumbnailClicked = function(Item) {
+            $scope.SelectedItem = Item;
+
+        };
+    
         //authenticate
         var authenticate = function (data, status) {
             if (data != "false") {

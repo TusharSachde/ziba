@@ -17,22 +17,22 @@
     </script>
     <script>
         var isMobile = {
-            Android: function() {
+            Android: function () {
                 return navigator.userAgent.match(/Android/i);
             },
-            BlackBerry: function() {
+            BlackBerry: function () {
                 return navigator.userAgent.match(/BlackBerry/i);
             },
-            iOS: function() {
+            iOS: function () {
                 return navigator.userAgent.match(/iPhone|iPad|iPod/i);
             },
-            Opera: function() {
+            Opera: function () {
                 return navigator.userAgent.match(/Opera Mini/i);
             },
-            Windows: function() {
+            Windows: function () {
                 return navigator.userAgent.match(/IEMobile/i);
             },
-            any: function() {
+            any: function () {
                 return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
             }
         };
@@ -46,7 +46,7 @@
         _clt["custId"] = "{{email}}";
         _clt["siteId"] = "40606bc583";
         _clt["ref"] = encodeURIComponent(document.referrer);
-        (function() {
+        (function () {
             var cl = document.createElement('script');
             cl.type = 'text/javascript';
             cl.async = true;
@@ -72,7 +72,7 @@
     <script src="lib/js/angular-animate.js"></script>
     <script src="lib/js/angular-route.min.js"></script>
     <script src="lib/js/angular-resource.min.js"></script>
-
+    <script src="lib/js/zoom.js"></script>
     <!--<script src="lib/js/bootstrap.min.js"></script>-->
     <script src="lib/js/ui-bootstrap-tpls-0.11.0.min.js"></script>
     <script src="lib/js/jquery.bxslider.min.js"></script>
@@ -93,13 +93,13 @@
     <script src="https://checkout.stripe.com/checkout.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
-        (function(i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
+            i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
+                m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -107,6 +107,18 @@
 
         ga('create', 'UA-55688126-1', 'auto');
         ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+        var switchTo5x = true;
+    </script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "151ada81-ab2d-4bdb-bae6-c1762cc0f2bb",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
     </script>
 
 
@@ -151,10 +163,10 @@
     <script>
         var issearch = false;
 
-        $(document).ready(function() {
+        $(document).ready(function () {
 
 
-            $(".headsearch .icon").click(function() {
+            $(".headsearch .icon").click(function () {
 
                 if (issearch) {
                     issearch = false;
@@ -170,7 +182,7 @@
     </script>
 
     <script type="text/javascript">
-        (function(d, t) {
+        (function (d, t) {
             if (window.location.hash != '#gleam' && ('' + document.cookie).match(/(^|;)\s*GleamaaA2s=X($|;)/)) {
                 return;
             }
@@ -185,5 +197,3 @@
 </body>
 
 </html>
-
-

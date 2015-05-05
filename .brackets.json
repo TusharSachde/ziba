@@ -13,6 +13,12 @@
         "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/js1/modules/map.js",
         "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/js1/modules/map.src.js",
         "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/js1/modules/no-data-to-display.js",
-        "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/js1/modules/no-data-to-display.src.js"
+        "/Applications/XAMPP/xamppfiles/htdocs/ziba/admin/assets/js1/modules/no-data-to-display.src.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/modules/no-data-to-display.src.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/easy-pie-chart.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/external-dragging-calendar.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/form-component.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/form-validation-script.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/ga.js"
     ]
 }
