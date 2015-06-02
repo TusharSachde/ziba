@@ -129,18 +129,31 @@
     <header>
         <div class="top-bar barheight">
             <div class="row">
-                <div class="col-xs-3"><span class="bold spacer"><a href="#/iheartziba">Join the IHEARTZIBA Club</a></span>
+                <div class="col-xs-2"><span class="bold spacer"><a href="#/iheartziba">Ziba</a></span>
                 </div>
+                <!--
                 <div class="col-xs-6 text-center"><span class="bold spacer">{{msgg}}</span>
+                </div>
+-->
+                <div class="col-xs-7 text-center">
+                    <span>SHIPPING WORLDWIDE</span>
+                    <span>FREE  DOMESTIC SHIPPING ON ORDERS OVER <span class="currencysym">£</span><span class="currencytobe">15</span> </span>
+                    
                 </div>
                 <div class="col-xs-3">
                     <div class="pull-right">
                         <a href="#/Login"><span class="thin">MY ACCOUNT</span></a>
 
                         <a href="#" class="badge newbadge" ng-show="template.totalproducts">{{template.totalproducts}}</a>
+<!--
                         <a href="#/cart" class="topicon {{template.cartclicked}}">
                             <span class="glyphicon glyphicon-shopping-cart"></span>
                         </a>
+-->
+<!--                        <a href="#/Login"><span class="thin">WISHLIST</span></a>-->
+                        <a class="wishicon">
+                                <img src="img/wishlist2.png">Wishlist
+                            </a>
                         <div class="input-group headsearch" ng-controller="search">
                             <span class="input-group-addon icon"><span class="glyphicon glyphicon-search"></span></span>
                             <input type="text" class="form-control inputbox" ng-model="searchpro" placeholder="Search" ng-change="search(searchpro)">

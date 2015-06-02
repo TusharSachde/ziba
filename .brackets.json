@@ -23,6 +23,9 @@
         "C:/xampp/htdocs/ziba/admin/assets/js1/gritter.js",
         "C:/xampp/htdocs/ziba/admin/assets/js1/highcharts.js",
         "C:/xampp/htdocs/ziba/admin/assets/js1/highstock.js",
-        "C:/xampp/htdocs/ziba/admin/assets/js1/modernizr.custom.js"
+        "C:/xampp/htdocs/ziba/admin/assets/js1/modernizr.custom.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/morris-script.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/owl.carousel.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/select2.js"
     ]
 }

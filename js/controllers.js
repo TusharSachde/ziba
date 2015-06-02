@@ -161,6 +161,32 @@ phonecatControllers.controller('home',
 
     });
 
+phonecatControllers.controller('SmartCartCtrl',
+    function($scope, TemplateService, MainJson, $rootScope, $location) {
+        var totalitemchange = function(data) {
+            $scope.totalitem = data;
+        };
+
+
+        var totalamountchange = function(data) {
+            $scope.totalamount = data;
+            $scope.remainingfordiscount = 15 - $scope.totalamount;
+            if ($scope.remainingfordiscount < 0) {
+                $scope.remainingfordiscount == 0;
+            }
+        };
+        $scope.$on('$routeChangeStart', function(next, current) {
+            MainJson.gettotalcart().success(totalitemchange);
+            MainJson.totalcart().success(totalamountchange);
+        });
+        MainJson.gettotalcart().success(totalitemchange);
+        MainJson.totalcart().success(totalamountchange);
+
+
+
+    }
+);
+
 phonecatControllers.controller('cart',
     function ($scope, TemplateService, MainJson, $rootScope, $location) {
         $(".zoomContainer").remove();
@@ -626,6 +652,12 @@ phonecatControllers.controller('profile',
         //authenticate
 
     });
+
+phonecatControllers.controller('about',
+    function ($scope, TemplateService, MainJson, $rootScope, $location) {
+    
+    
+});
 
 phonecatControllers.controller('ziba',
     function ($scope, TemplateService, MainJson, $rootScope, $location) {
