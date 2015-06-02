@@ -19,6 +19,10 @@
         "C:/xampp/htdocs/ziba/admin/assets/js1/external-dragging-calendar.js",
         "C:/xampp/htdocs/ziba/admin/assets/js1/form-component.js",
         "C:/xampp/htdocs/ziba/admin/assets/js1/form-validation-script.js",
-        "C:/xampp/htdocs/ziba/admin/assets/js1/ga.js"
+        "C:/xampp/htdocs/ziba/admin/assets/js1/ga.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/gritter.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/highcharts.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/highstock.js",
+        "C:/xampp/htdocs/ziba/admin/assets/js1/modernizr.custom.js"
     ]
 }

@@ -658,8 +658,9 @@ h5.pricecolor {
     color: #2a4894;
 }
 img.slideset1 {
-    width: 190px;
+    width: 325px;
     float: left;
+    height:auto;
 }
 img.butterfly-top {
     position: absolute;
@@ -832,7 +833,11 @@ span.cartspace {
     margin: auto;
     border: 10px solid #f7f7f7;
     height: 244px;
-    position: relative;
+/*
+    position: absolute;
+    bottom: 0;
+    
+*/
 }
 .toggle {
     position: absolute;
@@ -938,10 +943,12 @@ span.cartspace {
     content: '';
     width: 86%;
     display: block;
+/*
     position: absolute;
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
+*/
 }
 .hover-nav {
     padding-left: 65px;
@@ -1079,4 +1086,34 @@ margin-bottom: -3px;
 .cloud-zoom-big {
     border: 0px solid #ccc;
     overflow: hidden;
+}
+a.g-login {
+    background: #dd4d3b;
+    margin-right: 8px;
+    padding: 8px 45px;
+    margin-top: 10px;
+}
+a.fb-login {
+    background: #3c5a98;
+    margin-right: 8px;
+    padding: 8px 45px;
+    margin-top: 10px;
+}
+a.g-login:hover,
+a.g-login:active,
+a.g-login:focus {
+    background: #dd4d3b;
+    margin-right: 8px;
+}
+a.fb-login:hover,
+a.fb-login:active,
+a.fb-login:focus {
+    background: #3c5a98;
+    margin-right: 8px;
+}
+a.g-login i.fa.fa-google-plus {
+    padding-right: 6px;
+}
+a.fb-login i.fa.fa-facebook {
+    padding-right: 6px;
 }

@@ -1447,6 +1447,18 @@ phonecatControllers.controller('product',
         $scope.addquantity = 1;
         $scope.addedtocart = "hide";
         $scope.loginlogouttext = "Login";
+    
+     $scope.showslideset1 = 0;
+        $scope.slidesetnext = function (value) {
+            console.log("Next Clicked");
+            $scope.showslideset1 = 1;
+            console.log($scope.showslideset1);
+        };
+        $scope.slidesetprev = function (value) {
+            console.log("Prev Clicked");
+            $scope.showslideset1 = 0;
+        };
+    
 
 //zoom coding
      $scope.items = [{
